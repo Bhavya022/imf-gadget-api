@@ -34,13 +34,11 @@ Install dependencies:
 
 ```bash
 Copy
-Edit
 npm install
 Create a .env file in the root directory and configure it:
 
 makefile
 Copy
-Edit
 DB_NAME=imf_gadget
 DB_USER=your_db_user
 DB_PASSWORD=your_db_password
@@ -51,13 +49,11 @@ Run the app:
 
 ```bash
 Copy
-Edit
 npm start
 If running for the first time, ensure the database is created and the table structure is updated:
 
 ```bash
 Copy
-Edit
 npx sequelize-cli db:migrate
 API Endpoints
 Authentication
@@ -67,7 +63,6 @@ Request:
 
 json
 Copy
-Edit
 {
   "username": "imf_agent",
   "password": "your_password"
@@ -76,7 +71,6 @@ Response:
 
 json
 Copy
-Edit
 {
   "token": "jwt_token_here"
 }
@@ -87,7 +81,6 @@ Response:
 
 json
 Copy
-Edit
 [
   {
     "id": "uuid",
@@ -102,7 +95,6 @@ Response:
 
 json
 Copy
-Edit
 {
   "id": "uuid",
   "name": "The Kraken",
@@ -114,7 +106,6 @@ Request:
 
 json
 Copy
-Edit
 {
   "status": "Deployed"
 }
@@ -122,7 +113,6 @@ Response:
 
 json
 Copy
-Edit
 {
   "id": "uuid",
   "name": "The Falcon",
@@ -134,7 +124,6 @@ Response:
 
 json
 Copy
-Edit
 {
   "id": "uuid",
   "name": "The Nightingale",
@@ -148,7 +137,6 @@ Response:
 
 json
 Copy
-Edit
 {
   "id": "uuid",
   "confirmationCode": "ABC123",
@@ -171,21 +159,10 @@ Authentication: All endpoints are protected using JWT. Add a valid Authorization
 
 ```bash
 Copy
-Edit
 Authorization: Bearer <your_jwt_token>
 Filtering: Filter gadgets by status using the GET /api/gadgets?status={status} endpoint.
 
 Deployment
 Deploy to platforms like Heroku, Render, or Railway.
 Ensure you configure your database connection and environment variables in the platform settings.
-vbnet
-Copy
-Edit
 
-### Styling Tips
-- **Bold Text**: Wrap text in `**` (double asterisks) for emphasis (e.g., `**Node.js**`).
-- **Code Blocks**: Use triple backticks (```) for code blocks to improve readability for commands, configurations, or responses.
-- **Tables**: Use `|` to create tables for organizing data (like the schema section).
-- **Headers**: Use `#` for headers (with more `#` for sub-headers).
-
-This Markdown will help present the API documentation clearly and in a well-structured mann
