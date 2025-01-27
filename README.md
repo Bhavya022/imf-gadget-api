@@ -1,5 +1,4 @@
-# imf-gadget-api
-IMF Gadget API
+Overview
 The IMF Gadget API is a secure API built with Node.js, Express, and PostgreSQL. It allows the Impossible Missions Force (IMF) to manage gadgets for their missions.
 
 Features
@@ -60,6 +59,7 @@ Authentication
 1. Login
 POST /api/auth/login
 Request:
+
 json
 Copy
 Edit
@@ -68,6 +68,7 @@ Edit
   "password": "your_password"
 }
 Response:
+
 json
 Copy
 Edit
@@ -78,6 +79,7 @@ Gadget Inventory
 2. Retrieve All Gadgets
 GET /api/gadgets/
 Response:
+
 json
 Copy
 Edit
@@ -92,6 +94,7 @@ Edit
 3. Add a New Gadget
 POST /api/gadgets/
 Response:
+
 json
 Copy
 Edit
@@ -103,6 +106,7 @@ Edit
 4. Update Gadget Details
 PATCH /api/gadgets/:id
 Request:
+
 json
 Copy
 Edit
@@ -110,6 +114,7 @@ Edit
   "status": "Deployed"
 }
 Response:
+
 json
 Copy
 Edit
@@ -121,6 +126,7 @@ Edit
 5. Soft-Delete Gadget
 DELETE /api/gadgets/:id
 Response:
+
 json
 Copy
 Edit
@@ -134,6 +140,7 @@ Self-Destruct Sequence
 6. Trigger Self-Destruct
 POST /api/gadgets/:id/self-destruct
 Response:
+
 json
 Copy
 Edit
@@ -156,11 +163,13 @@ Use Thunder Client or Postman to test the endpoints.
 
 Bonus Features
 Authentication: All endpoints are protected using JWT. Add a valid Authorization header:
+
 makefile
 Copy
 Edit
 Authorization: Bearer <your_jwt_token>
 Filtering: Filter gadgets by status using the GET /api/gadgets?status={status} endpoint.
+
 Deployment
 Deploy to platforms like Heroku, Render, or Railway.
 Ensure you configure your database connection and environment variables in the platform settings.
