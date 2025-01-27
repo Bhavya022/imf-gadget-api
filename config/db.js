@@ -3,7 +3,7 @@ require("dotenv").config();
 
 const sequelize = new Sequelize(
   process.env.DB_NAME || "imf_gadget_db_xou2",
-  process.env.DB_USER || "postgres",
+  process.env.DB_USER || "imf_gadget_db_xou2_user",
   process.env.DB_PASSWORD || "bhavya@22",
   {
     host: process.env.DB_HOST || "dpg-cubm20qj1k6c73ed01hg-a",
