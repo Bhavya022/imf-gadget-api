@@ -32,7 +32,7 @@ The **IMF Gadget API** is a secure API built with **Node.js**, **Express**, and 
    cd imf-gadget-api
 Install dependencies:
 
-bash
+```bash
 Copy
 Edit
 npm install
@@ -49,13 +49,13 @@ DB_PORT=5432
 JWT_SECRET=your_jwt_secret
 Run the app:
 
-bash
+```bash
 Copy
 Edit
 npm start
 If running for the first time, ensure the database is created and the table structure is updated:
 
-bash
+```bash
 Copy
 Edit
 npx sequelize-cli db:migrate
@@ -169,7 +169,7 @@ Use Thunder Client or Postman to test the endpoints.
 Bonus Features
 Authentication: All endpoints are protected using JWT. Add a valid Authorization header:
 
-bash
+```bash
 Copy
 Edit
 Authorization: Bearer <your_jwt_token>
